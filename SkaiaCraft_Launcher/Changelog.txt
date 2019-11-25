@@ -1,0 +1,30 @@
+======================================================================================================
+== LATEST CHANGELOG ==================================================================================
+======================================================================================================
+
+v3.0 (September 16, 2019)
+- Fixed 1.14.4 loading issue caused by Mojang's implementation of Obfiscation Maps
+- Stability improvements for newer Snapshots/later than 1.13.2
+- Fixed a random bug when installing Forge 1.7.10 where it would launch normal 1.7.10 instead of forge
+- Improved design
+- Added optional Dark Theme
+- Fixed grey play button error when loading newer versions
+- Fixed an issue where profiles were deleted
+- Fixed many errors and cleaned up code
+- added a neww Eridan Ampora language (EA)
+- Fixed Development Console
+- Considering to add more themes...undecided. Thanks a lot Shahmir you really riled me up.
+
+======================================================================================================
+== OLDER VERSIONS ====================================================================================
+======================================================================================================
+
+v2.1 (August 2019)
+- Cleaned up some code
+
+v2.0 (August 2018)
+- Added compatibility with latest boostrap (1.13 snapshots and above)
+- Prismarine design
+- Added many Languages
+- Imrproved Username-Saving feature
+- Fixed incompatibility with versions lower than 1.9

@@ -1,0 +1,43 @@
+1. 
+PROBLEM: In the Launcher, after pressing the big 'Play' button, it redirects me to "Game Output" tab with the following error:
+------------------------------------------------------------------------------------------
+Error: Could not find or load main class net.minecraft.client.main.Main
+Java HotSpot(TM) Client VM warning: Using incremental CMS is deprecated and will likely be removed in a future release
+------------------------------------------------------------------------------------------
+SOLUTION: Click 'Edit Profile' (in the bottom left), find the section called "Java Settings (advanced)" (At the bottom), and under this heading there should be a check box labelled "JVM arguements". 
+Remove -CMSIncrementalMode from the box. If you do that and save the profile, you should be able to play.
+
+
+2. 
+PROBLEM: SkaiaCraft Launcher.exe not opening
+SOLUTION: Disable Windows SmartScreen, then try opening the Launcher again.
+
+
+3.
+PROBLEM: 'Play' button greyed out, cannot press button
+SOLUTION: Delete your .minecraft folder.
+In order to know if you are affected by the error, a sample error is provided:
+
+------------------------------------------------------------------------------------------
+Job 'Version & Libraries' finished successfully
+Launching game
+Looking for old natives to clean up...
+Fatal error launching game. Report this to http://mojang.atlassian.net please!
+java.lang.NullPointerException
+    at net.minecraft.launcher.GameLauncher.cleanOldNatives(GameLauncher.java:515)
+    at net.minecraft.launcher.GameLauncher.launchGame(GameLauncher.java:360)
+    at net.minecraft.launcher.GameLauncher.onDownloadJobFinished(GameLauncher.java:693)
+    at net.minecraft.launcher.updater.download.DownloadJob.popAndDownload(DownloadJob.java:124)
+    at net.minecraft.launcher.updater.download.DownloadJob.access$000(DownloadJob.java:15)
+    at net.minecraft.launcher.updater.download.DownloadJob$1.run(DownloadJob.java:94)
+    at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+    at java.util.concurrent.FutureTask.run(Unknown Source)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.
+------------------------------------------------------------------------------------------
+
+.minecraft/minecraft folder locations:
+
+Windows  =	%appdata%\.minecraft
+Linux    =	~/.minecraft
+Mac OS X =	~/Library/Application Support/minecraft
